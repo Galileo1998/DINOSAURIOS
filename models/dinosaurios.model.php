@@ -60,4 +60,17 @@
         }
   }
 
+  function obtenerDinosaurioPorId($id)
+  {
+    $sqlstr = "select `dinosaurios`.`iddinosaurios`,
+        `dinosaurios`.`dinosauriosNombre`,
+        `dinosaurios`.`dinosauriosPeso`,
+        `dinosaurios`.`dinosauriosClase`,
+        `dinosaurios`.`dinosauriosEpoca`
+    from `dinosaurios`.`dinosaurios` where iddinosaurios=%d";
+    $dinosaurios= array();
+    $dinosaurios=obtenerUnRegistro(sprintf($sqlstr, $id));
+    return $dinosaurios;
+  }
+
 ?>

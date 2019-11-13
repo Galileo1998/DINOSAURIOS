@@ -23,8 +23,8 @@
     {{endif showIdDinosaurios}}
 
     <fieldset class="row">
-      <label class="col-5" for="dscdinosaurios">Nombre: </label>
-      <input type="text" name="dscdinosaurios" id="dscdinosaurios" {{readonly}} value="{{dinosauriosNombre}}" class="col-7" />
+      <label class="col-5" for="dsc">Nombre: </label>
+      <input type="text" name="dsc" id="dsc" {{readonly}} value="{{dinosauriosNombre}}" class="col-7" />
     </fieldset>
 
     <fieldset class="row">

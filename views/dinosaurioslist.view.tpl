@@ -29,7 +29,7 @@
           <td>{{dinosauriosClase}}</td>
           <td>{{dinosauriosEpoca}}</td>
           <td class="right">
-            <form action="index.php?page=examenform" method="post">
+            <form action="index.php?page=dinosauriosform" method="post">
               <input type="hidden" name="iddinosaurios" value="{{iddinosaurios}}"/>
               <input type="hidden" name="xcfrt" value="{{~xcfrt}}" />
               <button type="submit" name="btnDsp">Ver</button>

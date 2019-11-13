@@ -35,7 +35,7 @@
           $viewData["readonly"] = 'readonly';
           $viewData["selectDisable"] = 'disabled';
           mergeFullArrayTo($dinosaurios, $viewData);
-          $viewData["modeDsc"] = $modeDesc[$mode] . $viewData["dscdinosaurios"];
+          $viewData["modeDsc"] = $modeDesc[$mode] . $viewData["dsc"];
       }
       if (isset($_POST["btnUpd"])) {
           $mode = "UPD";
