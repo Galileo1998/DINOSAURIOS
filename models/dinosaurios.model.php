@@ -73,4 +73,21 @@
     return $dinosaurios;
   }
 
+  function modificarDinosaurio($nombre, $peso, $clase, $epoca, $iddinosaurios)
+  {
+      $updSQL = "UPDATE dinosaurios set dinosauriosNombre='%s', dinosauriosPeso=%f,
+      dinosauriosClase='%s', dinosauriosEpoca='%s' where iddinosaurios=%d;";
+
+      return ejecutarNonQuery(
+          sprintf(
+              $updSQL,
+              $nombre,
+              $peso,
+              $clase,
+              $epoca,
+              $iddinosaurios
+          )
+      );
+  }
+
 ?>
