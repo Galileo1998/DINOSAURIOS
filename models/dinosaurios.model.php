@@ -90,4 +90,15 @@
       );
   }
 
+  function eliminarDinosaurio($iddinosaurios)
+  {
+      $delSQL = "DELETE FROM dinosaurios where iddinosaurios=%d;";
+
+      return ejecutarNonQuery(
+          sprintf(
+              $delSQL,
+              $iddinosaurios
+          )
+      );
+  }
 ?>
