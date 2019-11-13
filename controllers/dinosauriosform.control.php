@@ -35,7 +35,7 @@
           $viewData["readonly"] = 'readonly';
           $viewData["selectDisable"] = 'disabled';
           mergeFullArrayTo($dinosaurios, $viewData);
-          $viewData["modeDsc"] = $modeDesc[$mode] . $viewData["dsc"];
+          $viewData["modeDsc"] = $modeDesc[$mode] . " Visualizar";
       }
       if (isset($_POST["btnUpd"])) {
           $mode = "UPD";
@@ -43,7 +43,7 @@
           $dinosaurios = obtenerDinosaurioPorId($_POST["iddinosaurios"]);
           $selectedEst=$dinosaurios["epocaDinosaurios"];
           mergeFullArrayTo($dinosaurios, $viewData);
-          $viewData["modeDsc"] = $modeDesc[$mode] . $viewData["dscdinosaurios"];
+          $viewData["modeDsc"] = $modeDesc[$mode];
       }
       if (isset($_POST["btnDel"])) {
           $mode = "DEL";
@@ -53,7 +53,7 @@
           $viewData["readonly"] = 'readonly';
           $viewData["selectDisable"] = 'disabled';
           mergeFullArrayTo($dinosaurios, $viewData);
-          $viewData["modeDsc"] = $modeDesc[$mode] . $viewData["dscdinosaurios"];
+          $viewData["modeDsc"] = $modeDesc[$mode];
       }
       if (isset($_POST["btnIns"])) {
           $mode = "INS";
